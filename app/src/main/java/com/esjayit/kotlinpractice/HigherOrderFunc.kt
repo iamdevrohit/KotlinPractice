@@ -1,6 +1,6 @@
 package com.esjayit.kotlinpractice
 
-fun main(){
+//fun main(){
 
 
     /**
@@ -19,16 +19,16 @@ fun main(){
 
     Example */
 
-    fun applyOperation(operation: (Int, Int) -> Int, a: Int, b: Int): Int {   return operation(a, b) }
-
-    fun add(a: Int, b: Int): Int {  return a + b }
-
-    fun multiply(a: Int, b: Int): Int {   return a * b }
-
-    val result1 = applyOperation(::add, 3, 4)
-    println(result1)  // Output: 7
-    val result2 = applyOperation(::multiply, 2, 5)
-    println(result2)  // Output: 10
+//    fun applyOperation(operation: (Int, Int) -> Int, a: Int, b: Int): Int {   return operation(a, b) }
+//
+//    fun add(a: Int, b: Int): Int {  return a + b }
+//
+//    fun multiply(a: Int, b: Int): Int {   return a * b }
+//
+//    val result1 = applyOperation(::add, 3, 4)
+//    println(result1)  // Output: 7
+//    val result2 = applyOperation(::multiply, 2, 5)
+//    println(result2)  // Output: 10
 
 
     /**
@@ -121,7 +121,7 @@ fun main(){
 
     Example */
 
-//    val numbers = listOf(1, 2, 3, 4, 5)
+  //  val numbers = listOf(1, 2, 3, 4, 5)
 //
 //    //map
 //    val squaredNumbers = numbers.map { it * it }
@@ -134,8 +134,8 @@ fun main(){
 //    //Reduce
 //    val sum = numbers.reduce { acc, element -> acc + element }
 //    println(sum) // Output: 15
-
-}
+//
+//}
 
 
 /**

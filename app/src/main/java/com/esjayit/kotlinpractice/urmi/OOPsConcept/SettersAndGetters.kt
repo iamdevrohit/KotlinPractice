@@ -48,33 +48,32 @@ import java.util.Locale
 //}
 /** Custom Setter and Getter : - */
 
-//class  Student (emai: String , pwd : Int , age : Int) {
-//     val emai : String = emai
-//
-//         get (){
-//             return field.lowercase(Locale.ROOT)
-//         }
-//    var pwd :Int = pwd
-//        set (value){
-//            field = if (value  > 6 ) value else
-//                 throw IllegalAccessException("password is small")
-//        }
-//
-//    var age : Int = age
-//
-//        set(value) {
-//            field = if (value > 18) value  else
-//                throw IllegalAccessException("age must be  18")
-//        }
-//}
-//fun main() {
-//    // info is right
-//     var stu = Student ("UU12@GMAIL.COM" ,12345678, 19 )
-//        println("${stu.emai}")
-//        println("${stu.pwd}")
-//        println("${stu.age}")
-//    //output:-
-//    //uu12@gmail.com
-//    //12345678
-//    //19
-//}
+class  Student (emai: String , pwd : Int , age : Int) {
+     val emai : String = emai
+
+         get (){
+             return field.lowercase(Locale.ROOT)
+         }
+    var pwd :Int = pwd
+        set (value){
+            field = if (value  > 6 ) value else
+                 throw IllegalAccessException("password is small")
+        }
+
+    var age : Int = age
+
+        set(value) {
+            field = if (value > 18) value  else throw IllegalAccessException("age must be  18")
+        }
+}
+fun main() {
+    // info is right
+     var stu = Student ("UU12@GMAIL.COM" ,12345678, 9 )
+        println("${stu.emai}")
+        println("${stu.pwd}")
+        println("${stu.age}")
+    //output:-
+    //uu12@gmail.com
+    //12345678
+    //19
+}
